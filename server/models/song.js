@@ -31,4 +31,4 @@ SongSchema.statics.findLyrics = function(id) {
     .then(song => song.lyrics);
 }
 
-export default mongoose.model('song', SongSchema);
+module.exports = mongoose.model('song', SongSchema);

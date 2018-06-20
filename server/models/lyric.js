@@ -20,4 +20,4 @@ LyricSchema.statics.like = function(id) {
     })
 }
 
-export default mongoose.model('lyric', LyricSchema);
+module.exports = mongoose.model('lyric', LyricSchema);
