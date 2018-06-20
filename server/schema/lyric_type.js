@@ -7,7 +7,9 @@ const {
   GraphQLInt,
   GraphQLString
 } = graphql;
-const Lyric = mongoose.model('lyric');
+
+
+const Lyric = require('../models/lyric');
 
 const LyricType = new GraphQLObjectType({
   name:  'LyricType',

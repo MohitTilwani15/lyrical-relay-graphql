@@ -3,8 +3,8 @@ const graphql = require('graphql');
 const { GraphQLObjectType, GraphQLList, GraphQLID, GraphQLNonNull } = graphql;
 const SongType = require('./song_type');
 const LyricType = require('./lyric_type');
-const Lyric = mongoose.model('lyric');
-const Song = mongoose.model('song');
+const Lyric = require('../models/lyric');
+const Song = require('../models/song');
 
 const RootQuery = new GraphQLObjectType({
   name: 'RootQueryType',
